@@ -82,3 +82,5 @@ jobs:
         shell: bash
         run: |
           rm -rf releases
+      - name: List files in releases directory
+        run: ls -la releases
