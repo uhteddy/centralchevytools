@@ -47,13 +47,10 @@ jobs:
             cp src-tauri/target/release/my-app* releases
           fi
 
-
-
-
-      - name: Get Tauri version
-        id: tauri_version
+      - name: Extract Tauri version
+        shell: bash
         run: |
-          VERSION=$(grep -oP '^version = "\K(.*)(?=")' Cargo.toml)
+          VERSION=$(grep -oP '^version = "\K(.*)(?=")' src-tauri/Cargo.toml)
           echo "TAURI_VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Create GitHub Release
