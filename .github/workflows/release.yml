@@ -37,14 +37,16 @@ jobs:
         run: npm ci
 
       - name: Build Tauri App
+        shell: bash
         run: |
           npm run tauri build
           mkdir -p releases
-          if (${{ runner.os }} -eq "Linux") {
+          if [ "${{ runner.os }}" == "Linux" ]; then
             cp src-tauri/target/release/bundle/*/* releases
-          } else {
+          else
             cp src-tauri/target/release/my-app* releases
-          }
+          fi
+
 
 
 
