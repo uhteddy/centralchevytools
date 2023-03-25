@@ -40,7 +40,12 @@ jobs:
         run: |
           npm run tauri build
           mkdir -p releases
-          cp src-tauri/target/release/my-app* releases
+          if [ "${{ runner.os }}" == "Linux" ]; then
+            cp src-tauri/target/release/bundle/*/* releases
+          else
+            cp src-tauri/target/release/my-app* releases
+          fi
+
 
       - name: Get Tauri version
         id: tauri_version
