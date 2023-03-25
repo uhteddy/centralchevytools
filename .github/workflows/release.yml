@@ -42,7 +42,7 @@ jobs:
           npm run tauri build
           mkdir -p releases
           if [ "${{ runner.os }}" == "Linux" ]; then
-            cp src-tauri/target/release/bundle/*/* releases
+            cp -r src-tauri/target/release/bundle/*/* releases
           else
             cp src-tauri/target/release/my-app* releases
           fi
