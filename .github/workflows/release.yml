@@ -43,9 +43,13 @@ jobs:
           mkdir -p releases
           if [ "${{ runner.os }}" == "Linux" ]; then
             cp -r src-tauri/target/release/bundle/*/* releases
+            cd releases
+            zip -r my-app-ubuntu-latest-${{ env.TAURI_VERSION }}.zip *
+            cd ..
           else
             cp src-tauri/target/release/my-app* releases
           fi
+
 
       - name: Extract Tauri version
         shell: bash
