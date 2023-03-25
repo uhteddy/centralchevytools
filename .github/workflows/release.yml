@@ -3,7 +3,7 @@ name: Build and Release Tauri App
 on:
   push:
     branches:
-      - main # Replace with your default branch if different
+      - master
 
 jobs:
   build_and_release:
