@@ -1,38 +1,33 @@
-# create-svelte
+# Central Chevrolet Tools
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Central Chevrolet Tools is a work-in-progress application built on Tauri that provides dealership-specific tools for Central Chevrolet employees. The application currently features an appointment board tool, allowing employees to manage customer appointments and schedules.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Appointment board:** A tool to manage customer appointments and schedules.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Getting Started
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+To use Central Chevrolet Tools, download and install the latest release from the [releases page](https://github.com/uhteddy/centralchevytools/releases). Once the application is installed, simply launch it to start using the appointment board tool.
 
-## Developing
+## Development
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Central Chevrolet Tools is open-source and contributions are welcome. To get started with development, follow these steps:
 
-```bash
-npm run dev
+1. Clone the repository: `git clone https://github.com/uhteddy/centralchevytools.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run tauri dev`
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Roadmap
 
-## Building
+- Add more dealership-specific tools
+- Improve user interface and user experience
+- Implement additional features as suggested by employees and management
 
-To create a production version of your app:
+## Support
 
-```bash
-npm run build
-```
+If you encounter any issues or have any questions, please contact the Central Chevrolet IT department at it@centralchevrolet.com.
 
-You can preview the production build with `npm run preview`.
+## License
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Central Chevrolet Tools is licensed under the [MIT License](https://opensource.org/licenses/MIT). See `LICENSE` for more information.
