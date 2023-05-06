@@ -26,7 +26,7 @@ Central Chevrolet Tools is open-source and contributions are welcome. To get sta
 
 ## Support
 
-If you encounter any issues or have any questions, please contact the Central Chevrolet IT department at it@centralchevrolet.com.
+If you encounter any issues or have any questions, please contact the Central Chevrolet IT department at theodore.hartling@centralchevyauto.com.
 
 ## License
 
